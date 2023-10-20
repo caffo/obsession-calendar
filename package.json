@@ -1,0 +1,22 @@
+{
+  "name": "obsession-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "obsession-calendar": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.1.1",
+    "moment": "^2.29.4",
+    "pkg": "^5.8.1"
+  }
+}
