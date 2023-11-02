@@ -1,3 +1,7 @@
+.calendar {
+  max-width: 70ch;
+  margin: 0 auto;
+}
 .calendar .days {
   display: inline-block;
   width: 23px;
@@ -44,4 +48,23 @@
 .calendar .writing {
   background-image: url(../src/img/co.png);
   background-position: -5px -39px;
+}
+.calendar .days .tooltip {
+  display: none;
+}
+.tippy-box {
+  background-color: #fdfcfb;
+  border: 1px solid #eee;
+  font-size: medium;
+  color: #3a3a3a;
+  padding: 15px;
+}
+.tippy-box h3 {
+  margin: 0px;
+}
+.tippy-box ul {
+  margin: 0px;
+}
+.tippy-box a {
+  color: #000;
 }
