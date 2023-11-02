@@ -80,9 +80,14 @@ function run(inputFilePath, outputFilePath) {
       htmlMarkups.push(markup)
     }
 
-    // write output file
-    resultHTML = `${cssMarkup}\n\n${htmlMarkups.reverse().join('')}\n\n${jsMarkup}`
-    fs.writeFileSync(outputFilePath, resultHTML, 'utf8');
+    resultHTML = `\n${cssMarkup}\n\n${htmlMarkups.reverse().join('')}${jsMarkup}\n`
+
+    // update target file
+    const $output = cheerio.load(fs.readFileSync(targetFilePath, 'utf8'));
+    
+    $output('#calendar').html(resultHTML)
+
+    fs.writeFileSync(targetFilePath, $output.html(), 'utf8');    
   } catch (error) {
     console.error('Error:', error.message);
     process.exit(1);
@@ -98,6 +103,6 @@ if (args.length !== 2) {
 }
 
 const inputFilePath = path.resolve(args[0]);
-const outputFilePath = path.resolve(args[1]);
+const targetFilePath = path.resolve(args[1]);
 
-run(inputFilePath, outputFilePath);
+run(inputFilePath, targetFilePath);

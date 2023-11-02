@@ -8,49 +8,52 @@
   height: 35px;
   text-align: center;
   color: transparent;
-  box-shadow: 0 0.5px 0 0 #eee, 0.5px 0 0 0 #eee, 0 -0.5px 0 0 #eee, -0.5px 0 0 0 #eee;
+  box-shadow: 0 0.5px 0 0 #ddd, 0.5px 0 0 0 #ddd, 0 -0.5px 0 0 #ddd, -0.5px 0 0 0 #ddd;
   background-repeat: no-repeat;
   cursor: pointer;
   margin-right: -4px;
 }
 .calendar .rest {
-  background-image: url(../src/img/co.png);
+  background-image: url(co.png);
   background-position: -8px -79px;
 }
 .calendar .books {
-  background-image: url(../src/img/bo.png);
+  background-image: url(bo.png);
   background-position: -3px -2px;
 }
 .calendar .games {
-  background-image: url(../src/img/bo.png);
+  background-image: url(bo.png);
   background-position: -35px -2px;
 }
 .calendar .travel {
-  background-image: url(../src/img/t.png);
+  background-image: url(t.png);
   background-position: -3px 3px;
 }
 .calendar .system {
-  background-image: url(../src/img/pi.png);
+  background-image: url(pi.png);
   background-position: -103px -35px;
 }
 .calendar .manga {
-  background-image: url(../src/img/c.png);
+  background-image: url(pi.png);
   background-position: -1px 1px;
 }
 .calendar .coding {
-  background-image: url(../src/img/c.png);
+  background-image: url(c.png);
   background-position: -1px -1px;
 }
 .calendar .music {
-  background-image: url(../src/img/m.png);
+  background-image: url(m.png);
   background-position: 0;
 }
 .calendar .writing {
-  background-image: url(../src/img/co.png);
+  background-image: url(co.png);
   background-position: -5px -39px;
 }
 .calendar .days .tooltip {
   display: none;
+}
+.calendar .empty {
+  background-color: #fafafa;
 }
 .tippy-box {
   background-color: #fdfcfb;
