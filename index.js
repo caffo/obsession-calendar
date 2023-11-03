@@ -36,8 +36,8 @@ function run(inputFilePath, outputFilePath) {
     obsessions.sort((a, b) => a.year - b.year);
 
     // load css markup
-    const cssMarkup = `<style>\n${fs.readFileSync('src/css/calendar.css', 'utf8')}\n</style>`
-    const jsMarkup = `<script>\n${fs.readFileSync('src/js/tooltip.js', 'utf8')}\n</script>`
+    const cssMarkup = `<style>\n${fs.readFileSync(path.join(__dirname, 'src/css/calendar.css'), 'utf8')}\n</style>`
+    const jsMarkup = `<script>\n${fs.readFileSync(path.join(__dirname, 'src/js/tooltip.js'), 'utf8')}\n</script>`
 
     // build html markup
     let htmlMarkups = []
