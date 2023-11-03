@@ -1,6 +1,7 @@
 .calendar {
   max-width: 70ch;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .calendar .days {
@@ -81,9 +82,13 @@
 }
 
 .tippy-box ul {
-  margin: 0px;
+  margin: -25px 30px !important;
 }
 
 .tippy-box a {
   color: #000;
+}
+
+.calendar>h3 {
+  margin-bottom: 30px !important;
 }
