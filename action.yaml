@@ -1,0 +1,15 @@
+name: 'obsession-calendar'
+description: 'Transform HTML markup entries into a nift calendar and insert into a target file'
+branding:
+    icon: 'activity'
+    color: 'green'
+inputs:
+  arg1:
+    description: 'Input file'
+    required: true
+  arg2:
+    description: 'Target file'
+    required: true
+runs:
+    using: 'node16'
+    main: 'index.js'
