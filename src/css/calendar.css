@@ -16,6 +16,7 @@
   margin-right: -4px;
 }
 
+
 .calendar .rest {
   background-image: url(/images/co.png);
   background-position: -8px -79px;
@@ -86,7 +87,7 @@
 }
 
 .tippy-box a {
-  color: #000;
+  color: var(--link-color);
 }
 
 .calendar>h3 {
@@ -95,6 +96,12 @@
 
 
   @media (prefers-color-scheme: dark) {
+    .tippy-box {
+        background-color: rgb(67, 68, 74);
+        border: 1px solid var(--lighter-divider-color);
+        filter: brightness(0.8) contrast(1.2);
+    }
+    
     .calendar .books {
       background-image: url('/images/bo.png');
       background-position: -2px -38px;
