@@ -92,3 +92,55 @@
 .calendar>h3 {
   margin-bottom: 30px !important;
 }
+
+
+  @media (prefers-color-scheme: dark) {
+    .calendar .books {
+      background-image: url('/images/bo.png');
+      background-position: -2px -38px;
+    }
+
+    .calendar .games {
+      background-image: url('/images/bo.png');
+      background-position: -35px -38px;
+    }
+
+    .calendar .manga {
+      background-position: -1px -79px;
+    }
+
+    .calendar .system {
+      background-position: -103px -118px;
+    }
+
+    .calendar .coding {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAjCAYAAABhCKGoAAAAAXNSR0IArs4c6QAAASVJREFUSIndVtENxSAI1JdORedyCufCtXhfGKpghfjVSxpbq8IdSEjpK8j8QkSPH601mla/AACy/M45PxcQUX8QkQCAtJHftQcRSZ4zYceAHHcMqXK11qiUkmqtXqU6eD8AZJbrGhfVWlMpJWxEc/CneRI92HJwMhIBH2w5OMkl4YnNKpYmE2/wWSqNzZKJRd9ywJo/Jpd0atx3JPCMEBNNLpmmu0xDclnzoRSWm8aLphmyLqOLyZs8FpNl4GXeW3dgx4ltJjtBDjHxwl1WInAz8Zb8VYEM1S7v+mNyrRLjmJEVa1Uu6ZV2y9/mRvRuBRF7D2OVD60wrorlfd85pcMpbOHBxEpDbX5nLTOZjHjBlVcbVbkinaNlQGJqU91WDMg29Tv4A1SqFwkwuHv8AAAAAElFTkSuQmCC");
+      background-position: -1px -1px;
+    }
+
+    .calendar .music {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAhCAYAAAAyCTAQAAAAAXNSR0IArs4c6QAAATlJREFUSImtllsOxCAIRccuS9flKlgX63I+JhhKLw+b4aeJ1XMREWmfQ2PmZcfGGA3NhYMZeM65x4jIFWh2YWYarAVSOFpoIZlpkSO4FvB2oAWulHZgIighbjbWkUfyn4huX29+k3BkE60DdtyuJaJfWCoHNefcAHHEjlm7tGom4v33EuHmuWw3g1SyasPRQptyUQqGcLtAA/VBe7vydtqiy4NS0DNUb8JLhLIBORIeaGaRCMpvGbvd0JPaYuejEMKSW6mO0S3d11/Do0OLto/Exxjt8hagvPdC4tmG6yLvVb4sHcWJB9yaBdpvBBZHb+8eeoARoPIKPeBvBbwOALYWFYEM7MKrAhE4hGcCGTiFawFkEbhszLx676v3vph5Vbuz477F9iZ/gaOrnwmU4BLb09ryqoVGwsi+GsoqHeJddIwAAAAASUVORK5CYII=");
+    }
+  
+
+    .calendar .rest {
+      background-image: url('/images/co.png');
+      background-position: -43px -79px;
+
+    }
+
+    .calendar .coffee {
+      background-image: url('/images/co.png');
+      background-position: -43px -5px;
+    }
+
+    .calendar .writing {
+      background-image: url('/images/h.png');
+      background-position: -3px 3px;
+    }
+
+    .calendar .travel {
+      background-image: url('/images/t.png');
+      background-position: -31px 3px;
+    }
+  }
