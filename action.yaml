@@ -4,12 +4,15 @@ branding:
     icon: 'activity'
     color: 'green'
 inputs:
-  arg1:
+  input:
     description: 'Input file'
     required: true
-  arg2:
+  target:
     description: 'Target file'
     required: true
 runs:
     using: 'node16'
     main: 'index.js'
+    env:
+      INPUT_FILE: ${{ inputs.input_file }}
+      TARGET_FILE: ${{ inputs.target_file }}

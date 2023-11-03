@@ -95,14 +95,27 @@ function run(inputFilePath, outputFilePath) {
 }
 
 // cli
-const args = process.argv.slice(2);
+let inputFilePath;
+let targetFilePath;
 
-if (args.length !== 2) {
-  console.error('Usage: obsession-calendar <input-file> <output-file>');
-  process.exit(1);
+if (process.env.GITHUB_ACTIONS) {
+  inputFilePath = path.resolve(process.env.INPUT_FILE);
+  targetFilePath = path.resolve(process.env.TARGET_FILE);
+} else {
+  const args = process.argv.slice(2);
+  
+  if (args.length !== 2) {
+    console.error('Usage: obsession-calendar <input-file> <output-file>');
+    process.exit(1);
+  }
+  
+  inputFilePath = path.resolve(args[0]);
+  targetFilePath = path.resolve(args[1]);
 }
 
-const inputFilePath = path.resolve(args[0]);
-const targetFilePath = path.resolve(args[1]);
+if (!inputFilePath || !targetFilePath) {
+  console.error('Both input file path and target file path are required.');
+  process.exit(1);
+}
 
 run(inputFilePath, targetFilePath);
