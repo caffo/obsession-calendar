@@ -10,7 +10,7 @@
   height: 35px;
   text-align: center;
   color: transparent;
-  box-shadow: 0 0.5px 0 0 #ddd, 0.5px 0 0 0 #ddd, 0 -0.5px 0 0 #ddd, -0.5px 0 0 0 #ddd;
+  box-shadow: 0 0.5px 0 0 #ccc, 0.5px 0 0 0 #ccc, 0 -0.5px 0 0 #ccc, -0.5px 0 0 0 #ccc;
   background-repeat: no-repeat;
   cursor: pointer;
   margin-right: -4px;
